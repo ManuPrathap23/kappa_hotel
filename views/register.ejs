@@ -1,0 +1,45 @@
+<%- include("header") -%>
+<div id="reg">
+  <h1>Hey welcome!</h1>
+  <h3>This process takes just 2mins.</h3>
+  <p>Enter the folloeing details</p>
+  <div class="card">
+    <div class="card-body">
+      <form action="/register" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control"  name="name">
+        </div>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control"  name="username">
+          <p class="error"></p>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control"  name="email">
+        </div>
+       
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control"  name="password">
+        </div>
+        <div class="mb-3">
+          <label for="menu" class="form-label">Cuisine preference:</label>
+          <select  name="menu">
+              <option value="chinese">Chinese</option>
+              <option value="italian">Italian</option>
+              <option value="baked goods">Baked food</option>
+            </select>
+        </div>
+        
+
+        <button type="submit" class="btn btn-success">Register</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+<%- include("footer") -%>
